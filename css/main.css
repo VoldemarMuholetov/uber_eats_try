@@ -87,6 +87,39 @@ body {
 
 /*Оформление Article*/
 
+.article-block {
+    max-width: 1124px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.article-container{
+    width: 85%;
+    margin: 0 auto;
+    
+}
+.article-container > input {
+    width: 100%;
+    border-bottom: 1px solid rgba(75, 75, 75, 0.3);
+}
+
+.article-header {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 22px;
+    line-height: 34px;
+    color: #1D1D1D;
+
+}
+.article-cards {
+    display: flex;
+    min-height: 500px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
 
 /*Оформление Footer*/
 

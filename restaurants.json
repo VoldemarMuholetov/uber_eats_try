@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Макдоналдс — Газетный",
+        "average_price": "₽₽",
+        "tags": ["Бургеры"],
+        "average_time": "25 - 35 мин"
+   },
+   {
+        "name": "DimSum & Co — ЦДМ",
+        "average_price": "₽",
+        "tags": ["Японская", "Китайская", "Азиатская"],
+        "average_time": "40 - 50 мин"
+   },
+   {
+        "name": "ДвижОК — Манежная",
+        "average_price": "₽",
+        "tags": ["Американская", "Европейская"],
+        "average_time": "35 - 45 мин"
+    },
+    {
+        "name": "НЯ — NHA",
+        "average_price": "₽₽",
+        "tags": ["Вьетнамская"],
+        "average_time": "30 - 40 мин"
+    },
+    {
+        "name": "Точка Дзы — Цветной",
+        "average_price": "₽₽",
+        "tags": ["Вьетнамская"],
+        "average_time": "40 - 50 мин"
+    },
+    {
+        "name": "Cinnabon",
+        "average_price": "₽",
+        "tags": ["Выпечка", "Десерты", "Капкейки"],
+        "average_time": "25 - 35 мин"
+    },
+    {
+        "name": "PIZZELOVE",
+        "average_price": "₽₽",
+        "tags": ["Пицца"],
+        "average_time": "15 - 25 мин"
+    },
+    {
+        "name": "Zю кафе — Тверская",
+        "average_price": "₽₽",
+        "tags": ["Японская"],
+        "average_time": "25 - 35 мин"
+    },
+    {
+        "name": "Bar BQ Cafe — Манежная",
+        "average_price": "₽₽₽",
+        "tags": ["Европейская"],
+        "average_time": "30 - 40 мин"
+    }
+]
