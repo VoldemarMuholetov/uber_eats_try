@@ -114,10 +114,19 @@ body {
 }
 .article-cards {
     display: flex;
+    width: 100%;
     min-height: 500px;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
 
+}
+.article_cards_card {
+    width: 308px;
+    height: 366px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
 }
 
 
@@ -178,7 +187,7 @@ body {
     transform: scale(1.2);
 }
 
-@media screen and (max-width: 655px) {
+@media screen and (max-width: 720px) {
     .footer-block {
         height: fit-content;
     }
