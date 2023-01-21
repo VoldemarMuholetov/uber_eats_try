@@ -1,56 +1,65 @@
 [
     {
         "name": "Макдоналдс — Газетный",
-        "average_price": "₽₽",
+        "average_price": "₽₽ • ",
         "tags": ["Бургеры"],
-        "average_time": "25 - 35 мин"
+        "average_time": "25 - 35 мин",
+        "imageURL": "https://raw.githubusercontent.com/VoldemarMuholetov/uber_eats_try/master/img/macdonalds.png"
    },
    {
         "name": "DimSum & Co — ЦДМ",
-        "average_price": "₽",
+        "average_price": "₽ • ",
         "tags": ["Японская", "Китайская", "Азиатская"],
-        "average_time": "40 - 50 мин"
+        "average_time": "40 - 50 мин",
+        "imageURL": "https://raw.githubusercontent.com/VoldemarMuholetov/uber_eats_try/master/img/dimsum.png"
    },
    {
         "name": "ДвижОК — Манежная",
-        "average_price": "₽",
+        "average_price": "₽ • ",
         "tags": ["Американская", "Европейская"],
-        "average_time": "35 - 45 мин"
+        "average_time": "35 - 45 мин",
+        "imageURL": "https://raw.githubusercontent.com/VoldemarMuholetov/uber_eats_try/master/img/dvijok.png"
     },
     {
         "name": "НЯ — NHA",
-        "average_price": "₽₽",
+        "average_price": "₽₽ • ",
         "tags": ["Вьетнамская"],
-        "average_time": "30 - 40 мин"
+        "average_time": "30 - 40 мин",
+        "imageURL": "https://raw.githubusercontent.com/VoldemarMuholetov/uber_eats_try/master/img/njahna.png"
     },
     {
         "name": "Точка Дзы — Цветной",
-        "average_price": "₽₽",
+        "average_price": "₽₽ • ",
         "tags": ["Вьетнамская"],
-        "average_time": "40 - 50 мин"
+        "average_time": "40 - 50 мин",
+        "imageURL": "https://raw.githubusercontent.com/VoldemarMuholetov/uber_eats_try/master/img/dotdzy.png"
     },
     {
         "name": "Cinnabon",
-        "average_price": "₽",
+        "average_price": "₽ • ",
         "tags": ["Выпечка", "Десерты", "Капкейки"],
-        "average_time": "25 - 35 мин"
+        "average_time": "25 - 35 мин",
+        "imageURL": "https://raw.githubusercontent.com/VoldemarMuholetov/uber_eats_try/master/img/cinnabon.png"
     },
     {
         "name": "PIZZELOVE",
-        "average_price": "₽₽",
+        "average_price": "₽₽ • ",
         "tags": ["Пицца"],
-        "average_time": "15 - 25 мин"
+        "average_time": "15 - 25 мин",
+        "imageURL": "https://raw.githubusercontent.com/VoldemarMuholetov/uber_eats_try/master/img/pizzalove.png"
     },
     {
         "name": "Zю кафе — Тверская",
-        "average_price": "₽₽",
+        "average_price": "₽₽ • ",
         "tags": ["Японская"],
-        "average_time": "25 - 35 мин"
+        "average_time": "25 - 35 мин",
+        "imageURL": "https://raw.githubusercontent.com/VoldemarMuholetov/uber_eats_try/master/img/zucafe.png"
     },
     {
         "name": "Bar BQ Cafe — Манежная",
-        "average_price": "₽₽₽",
+        "average_price": "₽₽₽ • ",
         "tags": ["Европейская"],
-        "average_time": "30 - 40 мин"
+        "average_time": "30 - 40 мин",
+        "imageURL": "https://raw.githubusercontent.com/VoldemarMuholetov/uber_eats_try/master/img/barbqcafe.png"
     }
 ]
