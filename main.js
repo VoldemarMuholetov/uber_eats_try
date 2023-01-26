@@ -17,73 +17,12 @@ console.log(Request.onload)*/
 //response = fetch('https://raw.githubusercontent.com/VoldemarMuholetov/uber_eats_try/master/restaurants.json')
 //let restaurants = fetch('https://raw.githubusercontent.com/VoldemarMuholetov/uber_eats_try/master/restaurants.json').json()
 //console.log(restaurants)
-/*let restaurants = [
-    {
-        "name": "Макдоналдс — Газетный",
-        "average_price": "₽₽ • ",
-        "tags": ["Бургеры"],
-        "average_time": "25 - 35 мин",
-        "imageURL": "https://raw.githubusercontent.com/VoldemarMuholetov/uber_eats_try/master/img/macdonalds.png"
-   },
-   {
-        "name": "DimSum & Co — ЦДМ",
-        "average_price": "₽ • ",
-        "tags": ["Японская", "Китайская", "Азиатская"],
-        "average_time": "40 - 50 мин",
-        "imageURL": "https://raw.githubusercontent.com/VoldemarMuholetov/uber_eats_try/master/img/dimsum.png"
-   },
-   {
-        "name": "ДвижОК — Манежная",
-        "average_price": "₽ • ",
-        "tags": ["Американская", "Европейская"],
-        "average_time": "35 - 45 мин",
-        "imageURL": "https://raw.githubusercontent.com/VoldemarMuholetov/uber_eats_try/master/img/dvijok.png"
-    },
-    {
-        "name": "НЯ — NHA",
-        "average_price": "₽₽ • ",
-        "tags": ["Вьетнамская"],
-        "average_time": "30 - 40 мин",
-        "imageURL": "https://raw.githubusercontent.com/VoldemarMuholetov/uber_eats_try/master/img/njahna.png"
-    },
-    {
-        "name": "Точка Дзы — Цветной",
-        "average_price": "₽₽ • ",
-        "tags": ["Вьетнамская"],
-        "average_time": "40 - 50 мин",
-        "imageURL": "https://raw.githubusercontent.com/VoldemarMuholetov/uber_eats_try/master/img/dotdzy.png"
-    },
-    {
-        "name": "Cinnabon",
-        "average_price": "₽ • ",
-        "tags": ["Выпечка", "Десерты", "Капкейки"],
-        "average_time": "25 - 35 мин",
-        "imageURL": "https://raw.githubusercontent.com/VoldemarMuholetov/uber_eats_try/master/img/cinnabon.png"
-    },
-    {
-        "name": "PIZZELOVE",
-        "average_price": "₽₽ • ",
-        "tags": ["Пицца"],
-        "average_time": "15 - 25 мин",
-        "imageURL": "https://raw.githubusercontent.com/VoldemarMuholetov/uber_eats_try/master/img/pizzalove.png"
-    },
-    {
-        "name": "Zю кафе — Тверская",
-        "average_price": "₽₽ • ",
-        "tags": ["Японская"],
-        "average_time": "25 - 35 мин",
-        "imageURL": "https://raw.githubusercontent.com/VoldemarMuholetov/uber_eats_try/master/img/zucafe.png"
-    },
-    {
-        "name": "Bar BQ Cafe — Манежная",
-        "average_price": "₽₽₽ • ",
-        "tags": ["Европейская"],
-        "average_time": "30 - 40 мин",
-        "imageURL": "https://raw.githubusercontent.com/VoldemarMuholetov/uber_eats_try/master/img/barbqcafe.png"
-    }
-]*/
-let restaurants;
 
+
+let restaurants = [];
+let restaurantsCard = '';
+let restaurantsCardsAll = '';
+let types = []
 const getData = async () => {
   const response = await fetch("https://raw.githubusercontent.com/VoldemarMuholetov/uber_eats_try/master/restaurants.json");
   const data = await response.json();
@@ -94,11 +33,37 @@ const getData = async () => {
 (async () => {
   await getData();
   for (let i = 0; i < restaurants.length; i++) {
-    console.log(restaurants[i].average_price, restaurants[i].tags.toString())
+    restaurantsCard = `
+    <div class="article_cards_card">
+        <div class="article_cards_card_icon">
+            <img src="${restaurants[i].imageURL}">
+        </div>
+        <div class="article_cards_card_name">
+            ${restaurants[i].name}
+        </div>
+        <div class="article_cards_card_average_price_tags">
+            ${restaurants[i].average_price}${restaurants[i].tags.toString()}
+        </div>
+        <div class="article_cards_card_average_time">
+            ${restaurants[i].average_time}
+        </div>
+    </div>`
+    //types.push(restaurantsCard === undefined)
+    //console.log(typeof restaurantsCard)
+    
+    restaurantsCardsAll += restaurantsCard
+    //document.querySelector('#article-cards').innerHTML = restaurantsCardsAll
+    //console.log(restaurantsCard)
+    //console.log(restaurants[i].average_price, restaurants[i].tags.toString()*/)
 }
+    //$('.article-cards').append(restaurantsCardsAll);
+    document.querySelector('#article-cards').innerHTML = restaurantsCardsAll
+    //console.log(types)
+    //console.log(restaurantsCardsAll)
+    //console.log(restaurantsCard)
 })();
 
-
+//document.querySelector('#article-cards').innerHTML = restaurantsCardsAll
 /*const getJson = async () => {
     const myJson = await (await fetch('https://raw.githubusercontent.com/VoldemarMuholetov/uber_eats_try/master/restaurants.json')).json();
     console.log('myJson', myJson);
